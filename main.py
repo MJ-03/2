@@ -14,11 +14,11 @@ fetal_model = pickle.load(open("model/fetal_health_classifier.sav",'rb'))
 
 # sidebar for navigation
 with st.sidebar:
-    st.title("MedPredict")
-    st.write("Welcome to the MedPredict")
+    st.title("PregCare")
+    st.write("Welcome to the PregCare")
     st.write(" Choose an option from the menu below to get started:")
 
-    selected = option_menu('MedPredict',
+    selected = option_menu('PregCare',
                           
                           ['About us',
                             'Pregnancy Risk Prediction',
@@ -29,8 +29,8 @@ with st.sidebar:
     
 if (selected == 'About us'):
     
-    st.title("Welcome to MedPredict")
-    st.write("At MedPredict, our mission is to revolutionize healthcare by offering innovative solutions through predictive analysis. "
+    st.title("Welcome to PregCare")
+    st.write("At PregCare, our mission is to revolutionize healthcare by offering innovative solutions through predictive analysis. "
          "Our platform is specifically designed to address the intricate aspects of maternal and fetal health, providing accurate "
          "predictions and proactive risk management.")
     
